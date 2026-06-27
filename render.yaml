@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: vera-bot
+    runtime: python
+    plan: starter            # avoid 'free': it idles out and can fail healthz mid-test
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn bot.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /v1/healthz
+    envVars:
+      - key: LLM_API_KEY
+        sync: false          # set in the Render dashboard, do not commit
+      - key: LLM_BASE_URL
+        value: https://api.openai.com/v1
+      - key: VERA_MODEL
+        value: gpt-4o-mini
+      - key: VERA_CONTACT_EMAIL
+        value: aditya.sps25@gmail.com

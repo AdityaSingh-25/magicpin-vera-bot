@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+
+# Challenge-provided materials (magicpin's, kept local only, not republished)
+/challenge-brief.md
+/challenge-testing-brief.md
+/judge_simulator.py
+/engagement-design.md
+/engagement-research.md
+/examples/
