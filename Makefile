@@ -11,6 +11,7 @@ run:
 selftest:
 	.venv/bin/python selftest.py
 
-# Run the official judge against a running bot (needs an LLM key inside judge_simulator.py).
+# Self-score with the challenge-provided judge_simulator.py (drop it in the repo root first;
+# it is not included here, and it needs an LLM key set inside the file).
 sim:
 	.venv/bin/python judge_simulator.py

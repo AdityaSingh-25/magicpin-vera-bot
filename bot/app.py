@@ -44,11 +44,11 @@ not a website: the judge harness drives it over HTTP.</p>
 &nbsp;|&nbsp; version: <code>{config.VERSION}</code></p>
 <h3>Endpoints</h3>
 <ul>
-<li><a href="/v1/healthz">GET /v1/healthz</a> &ndash; liveness and loaded-context counts</li>
-<li><a href="/v1/metadata">GET /v1/metadata</a> &ndash; bot identity and approach</li>
-<li><code>POST /v1/context</code> &ndash; ingest a context push</li>
-<li><code>POST /v1/tick</code> &ndash; proactive composition</li>
-<li><code>POST /v1/reply</code> &ndash; one conversation turn</li>
+<li><a href="/v1/healthz">GET /v1/healthz</a>: liveness and loaded-context counts</li>
+<li><a href="/v1/metadata">GET /v1/metadata</a>: bot identity and approach</li>
+<li><code>POST /v1/context</code>: ingest a context push</li>
+<li><code>POST /v1/tick</code>: proactive composition</li>
+<li><code>POST /v1/reply</code>: one conversation turn</li>
 </ul>
 <p class="muted">Source code, approach and tradeoffs: <a href="{config.REPO_URL}">{config.REPO_URL}</a></p>
 </body></html>"""
